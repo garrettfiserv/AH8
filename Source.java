@@ -10,6 +10,12 @@ class Node<T> {
   
   class Source {
     public static <T> boolean linkedListFind(Node<T> head, T target) {
+      while(head != null){
+        if(head.val == target){
+          return true;
+        }
+        head = head.next;
+      }
       // todo
       return false;
     }
